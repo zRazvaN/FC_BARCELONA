@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:61324",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\..\\fcbarcelona.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
