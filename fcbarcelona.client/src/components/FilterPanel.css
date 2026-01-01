@@ -1,0 +1,183 @@
+.filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+    .filter-button:hover {
+        border-color: rgba(0, 102, 255, 0.5);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .filter-button.active {
+        border-color: rgba(0, 102, 255, 0.6);
+        background: rgba(0, 102, 255, 0.15);
+    }
+
+.filter-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background: #00ccff;
+    border-radius: 50%;
+    border: 2px solid rgba(15, 15, 25, 0.9);
+    animation: badgeFloat 2s ease-in-out infinite;
+}
+
+.filter-panel {
+    background: rgba(15, 15, 25, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    backdrop-filter: blur(20px);
+    animation: slideDown 0.3s ease;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+    .filter-header h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+.reset-filters {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+    .reset-filters:hover {
+        border-color: rgba(0, 102, 255, 0.5);
+        color: white;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+    .filter-group label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 600;
+    }
+
+    .filter-group select,
+    .filter-group input[type="number"] {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        padding: 0.8rem;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+
+        .filter-group select:hover,
+        .filter-group input[type="number"]:hover {
+            border-color: rgba(0, 102, 255, 0.5);
+        }
+
+        .filter-group select option {
+            background: #1a1a1a;
+        }
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    outline: none;
+}
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        background: linear-gradient(135deg, #0066ff, #00ccff);
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
+    }
+
+    .slider::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        background: linear-gradient(135deg, #0066ff, #00ccff);
+        cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
+    }
+
+.range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+    .range-inputs input {
+        flex: 1;
+    }
+
+    .range-inputs span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+    }
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes badgeFloat {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(0, 102, 255, 0.4);
+    }
+}

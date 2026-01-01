@@ -2,7 +2,7 @@
 .home-container-wrapper {
     width: 100%;
     min-height: calc(100vh - 80px);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 30, 0.85) 50%, rgba(0, 0, 0, 0.75) 100% ), url('/images/HomeBG.png') center/cover fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 30, 0.85) 50%, rgba(0, 0, 0, 0.75) 100% ), url('/images/home-bg.jpg') center/cover fixed;
     position: relative;
 }
 
@@ -641,6 +641,7 @@
     letter-spacing: 1px;
     animation: textPulse 1.5s ease-in-out infinite;
 }
+
 
 /* PLAYERS PAGE STYLES */
 .App {
