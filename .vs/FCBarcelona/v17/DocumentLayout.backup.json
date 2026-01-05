@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\comparemodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\comparemodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\filterpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\filterpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playercard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playercard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playermodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playermodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\searchbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\searchbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\sortdropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\sortdropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\pages\\pages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\pages\\pages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -11,40 +43,24 @@
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\pages\\players.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\filterpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\filterpanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playercard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playercard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\CompareModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fcbarcelona.client\\src\\components\\CompareModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playermodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playermodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playermodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playermodal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playercard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playercard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\playercard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\playercard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\filterpanel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\filterpanel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\sortdropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\sortdropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\sortdropdown.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\sortdropdown.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\searchbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\searchbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\searchbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -55,20 +71,12 @@
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|solutionrelative:fcbarcelona.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB105CC-5CB6-7369-42D7-CA8B5DE00C13}|fcbarcelona.client\\fcbarcelona.client.esproj|d:\\facultate\\anul3\\semestru1\\is\\lab\\proiectbarcelona\\fcbarcelona\\fcbarcelona.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -138,56 +146,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerModal.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerModal.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerModal.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CompareModal.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\CompareModal.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\CompareModal.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\CompareModal.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\CompareModal.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-28T17:43:33.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerModal.jsx",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.jsx",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerModal.jsx",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.jsx",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerModal.jsx",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFYAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-28T17:42:56.646Z",
+              "WhenOpened": "2026-01-05T16:41:02.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PlayerCard.css",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.css",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerCard.css",
               "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.css",
               "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerCard.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-28T17:41:43.737Z"
+              "WhenOpened": "2025-12-28T17:41:43.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SortDropdown.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SortDropdown.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SortDropdown.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SortDropdown.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\SortDropdown.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-28T17:38:38.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pages.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\pages.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\pages\\pages.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\pages.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\pages\\pages.css",
+              "ViewState": "AgIAACMGAAAAAAAAAAAWwCsGAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-16T19:23:55.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Players.jsx",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\Players.jsx",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\pages\\Players.jsx",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\Players.jsx",
+              "RelativeToolTip": "fcbarcelona.client\\src\\pages\\Players.jsx",
+              "ViewState": "AgIAAJYBAAAAAAAAAAAuwLEBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-16T19:24:46.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PlayerCard.jsx",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.jsx",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerCard.jsx",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.jsx",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerCard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-12-28T17:41:14.056Z"
+              "Title": "SearchBar.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SearchBar.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SearchBar.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SearchBar.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\SearchBar.css",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-28T17:37:35.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerModal.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerModal.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerModal.css",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAACABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-28T17:43:33.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Navbar.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\Navbar.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\Navbar.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\Navbar.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\Navbar.css",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAmwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-16T19:21:21.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -197,14 +260,53 @@
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\FilterPanel.css",
               "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\FilterPanel.css",
               "RelativeToolTip": "fcbarcelona.client\\src\\components\\FilterPanel.css",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-12-28T17:40:17.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\index.css",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\index.css",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\index.css",
+              "RelativeToolTip": "fcbarcelona.client\\src\\index.css",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-29T16:59:36.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerCard.jsx",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.jsx",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerCard.jsx",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerCard.jsx",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerCard.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-28T17:41:14.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompareModal.jsx",
+              "DocumentMoniker": "d:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\CompareModal.jsx",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\CompareModal.jsx",
+              "ToolTip": "d:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\CompareModal.jsx",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\CompareModal.jsx",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAuwKMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-01-05T16:39:48.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "FilterPanel.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\FilterPanel.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\FilterPanel.jsx",
@@ -216,45 +318,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SortDropdown.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SortDropdown.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SortDropdown.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SortDropdown.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\SortDropdown.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-28T17:38:38.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Players.jsx",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\Players.jsx",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\pages\\Players.jsx",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\Players.jsx",
-              "RelativeToolTip": "fcbarcelona.client\\src\\pages\\Players.jsx",
-              "ViewState": "AgIAABABAAAAAAAAAAAAwFYBAAAXAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "PlayerModal.jsx",
+              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.jsx",
+              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\PlayerModal.jsx",
+              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\PlayerModal.jsx",
+              "RelativeToolTip": "fcbarcelona.client\\src\\components\\PlayerModal.jsx",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-16T19:24:46.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T17:42:56.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "pages.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\pages.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\pages\\pages.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\pages.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\pages\\pages.css",
-              "ViewState": "AgIAAKsCAAAAAAAAAAAtwL4CAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-16T19:23:55.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "SortDropdown.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SortDropdown.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SortDropdown.jsx",
@@ -266,19 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SearchBar.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SearchBar.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SearchBar.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SearchBar.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\SearchBar.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-28T17:37:35.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SearchBar.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\SearchBar.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\SearchBar.jsx",
@@ -290,19 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "index.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\index.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\index.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\index.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\index.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-29T16:59:36.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "main.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\main.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\main.jsx",
@@ -314,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Data\\AppDbContext.cs",
@@ -326,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "PlayersController.cs",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Controllers\\PlayersController.cs",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Controllers\\PlayersController.cs",
@@ -338,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Home.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\pages\\Home.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\pages\\Home.jsx",
@@ -350,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Models\\Player.cs",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Models\\Player.cs",
@@ -362,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Program.cs",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Program.cs",
@@ -374,19 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Navbar.css",
-              "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\Navbar.css",
-              "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\Navbar.css",
-              "ToolTip": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\Navbar.css",
-              "RelativeToolTip": "fcbarcelona.client\\src\\components\\Navbar.css",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAmwGQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-16T19:21:21.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Navbar.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\components\\Navbar.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\components\\Navbar.jsx",
@@ -398,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "App.jsx",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\App.jsx",
@@ -410,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "SeedData.cs",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Data\\SeedData.cs",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Data\\SeedData.cs",
@@ -422,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "react.svg",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\src\\assets\\react.svg",
               "RelativeDocumentMoniker": "fcbarcelona.client\\src\\assets\\react.svg",
@@ -434,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "package.json",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\package.json",
               "RelativeDocumentMoniker": "fcbarcelona.client\\package.json",
@@ -446,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "package-lock.json",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\package-lock.json",
               "RelativeDocumentMoniker": "fcbarcelona.client\\package-lock.json",
@@ -458,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "index.html",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\index.html",
               "RelativeDocumentMoniker": "fcbarcelona.client\\index.html",
@@ -470,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "vite.config.js",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\vite.config.js",
               "RelativeDocumentMoniker": "fcbarcelona.client\\vite.config.js",
@@ -482,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "vite.svg",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\public\\vite.svg",
               "RelativeDocumentMoniker": "fcbarcelona.client\\public\\vite.svg",
@@ -494,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "launch.json",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\fcbarcelona.client\\.vscode\\launch.json",
               "RelativeDocumentMoniker": "fcbarcelona.client\\.vscode\\launch.json",
@@ -506,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\Properties\\launchSettings.json",
@@ -518,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FACULTATE\\ANUL3\\SEMESTRU1\\IS\\LAB\\ProiectBarcelona\\FCBarcelona\\FCBarcelona.Server\\appsettings.json",
               "RelativeDocumentMoniker": "FCBarcelona.Server\\appsettings.json",
