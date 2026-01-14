@@ -62,7 +62,6 @@
 .trophy-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
-    animation: trophyFloat 3s ease-in-out infinite;
 }
 
 .voting-header h2 {
@@ -312,14 +311,4 @@
     font-size: 1.2rem;
 }
 
-/* ANIMATIONS */
-@keyframes trophyFloat {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(-10px) rotate(5deg);
-    }
-}
 

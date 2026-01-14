@@ -1578,3 +1578,184 @@
         transform: translateY(0);
     }
 }
+
+
+/* Add these styles to your pages.css file */
+
+/* Legends Page Specific */
+.legends-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.legends-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Football Pitch Container */
+.football-pitch-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.football-pitch {
+    position: relative;
+    width: 100%;
+    padding-bottom: 133.33%; /* 3:4 aspect ratio for vertical pitch */
+    background: linear-gradient(180deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.2) 50%, rgba(34, 139, 34, 0.3) 100% );
+    background-size: 100% 10%;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Pitch Lines */
+.pitch-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+    .center-circle::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+    }
+
+.center-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.penalty-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 18%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+}
+
+.penalty-box-top {
+    top: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.penalty-box-bottom {
+    bottom: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.goal-area {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 8%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.goal-area-top {
+    top: 0;
+    border-top: none;
+}
+
+.goal-area-bottom {
+    bottom: 0;
+    border-bottom: none;
+}
+
+/* Manager Section */
+.manager-section {
+    max-width: 600px;
+    margin: 60px auto 40px;
+    padding: 0 20px;
+}
+
+.manager-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0052b4 0%, #a4222a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 25px;
+}
+
+.manager-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .manager-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(164, 34, 42, 0.3);
+        border-color: rgba(164, 34, 42, 0.4);
+    }
+
+.manager-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(164, 34, 42, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.manager-info h4 {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.manager-years {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.manager-trophies {
+    font-size: 1.1rem;
+    color: #ffd700;
+    font-weight: 600;
+}

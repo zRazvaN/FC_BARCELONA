@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import './pages.css';
 
 function Home() {
+    // State pentru controlul overlay-ului de animatie la incarcarea paginii
     const [animationComplete, setAnimationComplete] = useState(false);
 
     useEffect(() => {
-        // Marchează animația ca finalizată după 1.5 secunde
         const timer = setTimeout(() => {
             setAnimationComplete(true);
         }, 1500);
@@ -16,7 +16,6 @@ function Home() {
 
     return (
         <div className="home-container-wrapper">
-            {/* Logo Animation Overlay */}
             <div className={`logo-animation-overlay ${animationComplete ? 'fade-out' : ''}`}>
                 <div className="logo-animation-content">
                     <img
@@ -32,8 +31,8 @@ function Home() {
                 </div>
             </div>
 
-            {/* Main Content */}
             <div className="home-container">
+                {/* Sectiunea Hero: contine titlul principal, subtitlul si statisticile clubului */}
                 <div className="hero-section-home">
                     <div className="hero-badge">
                         <img src="/images/barca-logo.png" alt="Barcelona" className="hero-logo" />
@@ -60,11 +59,9 @@ function Home() {
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                         </Link>
-                        <Link to="/players" className="cta-button-secondary">
-                            View All Players
-                        </Link>
                     </div>
 
+                    {/* Dashboard cu trofeele majore ale clubului */}
                     <div className="hero-stats">
                         <div className="stat-box">
                             <div className="stat-number">27</div>
@@ -81,6 +78,7 @@ function Home() {
                     </div>
                 </div>
 
+                {/* Grid-ul de functionalitati: face legatura catre restul paginilor aplicatiei */}
                 <div className="features-grid-home">
                     <div className="feature-card-home">
                         <div className="feature-icon-large">⚽</div>
@@ -93,20 +91,20 @@ function Home() {
 
                     <div className="feature-card-home">
                         <div className="feature-icon-large">🏆</div>
-                        <h3>Rich History</h3>
-                        <p>Discover the legendary moments and achievements that have shaped Barcelona's legacy</p>
-                        <span className="feature-link coming-soon">
-                            Coming Soon
-                        </span>
+                        <h3>Club Legends</h3>
+                        <p>Explore the greatest players who wore the Blaugrana jersey and shaped Barcelona's legendary history</p>
+                        <Link to="/legends" className="feature-link">
+                            View Legends →
+                        </Link>
                     </div>
 
                     <div className="feature-card-home">
-                        <div className="feature-icon-large">📊</div>
-                        <h3>Build Your Team</h3>
-                        <p>Create your dream formation and customize your ideal Barcelona lineup</p>
-                        <span className="feature-link coming-soon">
-                            Coming Soon
-                        </span>
+                        <div className="feature-icon-large">🎬</div>
+                        <h3>Barcelona Movie</h3>
+                        <p>Experience the passion and glory of FC Barcelona through an epic cinematic journey</p>
+                        <Link to="/movie" className="feature-link">
+                            Watch Now →
+                        </Link>
                     </div>
                 </div>
 

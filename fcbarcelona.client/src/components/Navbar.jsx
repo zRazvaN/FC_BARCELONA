@@ -16,6 +16,12 @@ function Navbar() {
                     <li className="nav-item">
                         <Link to="/players" className="nav-link">Players</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/legends" className="nav-link">Legends</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/movie" className="nav-link">Movie</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

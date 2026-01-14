@@ -11,6 +11,7 @@ function FilterPanel({
 }) {
     return (
         <>
+            {/* Butonul principal care deschide/inchide panoul si indica daca sunt filtre active */}
             <button
                 onClick={onToggleFilters}
                 className={`filter-button ${hasActiveFilters ? 'active' : ''}`}
@@ -19,6 +20,7 @@ function FilterPanel({
                     <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
                 </svg>
                 Filters
+                {/* Bulina vizuala care apare cand exista cel putin un filtru aplicat */}
                 {hasActiveFilters && <span className="filter-badge"></span>}
             </button>
 
@@ -26,10 +28,12 @@ function FilterPanel({
                 <div className="filter-panel">
                     <div className="filter-header">
                         <h3>Filter Players</h3>
+                        {/* Buton pentru a sterge rapid toate filtrarile aplicate */}
                         <button onClick={onResetFilters} className="reset-filters">Reset All</button>
                     </div>
 
                     <div className="filters-grid">
+                        {/* Filtrare dupa pozitia in teren */}
                         <div className="filter-group">
                             <label>Position</label>
                             <select
@@ -44,6 +48,7 @@ function FilterPanel({
                             </select>
                         </div>
 
+                        {/* Filtrare dupa nationalitate, generata din lista unica primita ca prop */}
                         <div className="filter-group">
                             <label>Nationality</label>
                             <select
@@ -57,6 +62,7 @@ function FilterPanel({
                             </select>
                         </div>
 
+                        {/* Slider pentru filtrarea in functie de pragul minim de goluri marcate */}
                         <div className="filter-group">
                             <label>Minimum Goals: {filters.minGoals}</label>
                             <input
@@ -69,6 +75,7 @@ function FilterPanel({
                             />
                         </div>
 
+                        {/* Filtrare dupa intervalul de varsta (Min - Max) */}
                         <div className="filter-group">
                             <label>Age Range: {filters.minAge} - {filters.maxAge} years</label>
                             <div className="range-inputs">

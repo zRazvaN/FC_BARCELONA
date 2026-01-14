@@ -6,12 +6,13 @@ using FCBarcelona.Server.Models;
 namespace FCBarcelona.Server.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] 
     public class PlayersController : ControllerBase
     {
         private readonly AppDbContext _db;
         public PlayersController(AppDbContext db) => _db = db;
 
+        // Returneaza lista completa cu toti jucatorii din lot
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -19,11 +20,13 @@ namespace FCBarcelona.Server.Controllers
             return Ok(players);
         }
 
+        // Returneaza detaliile unui singur jucator pe baza ID-ului
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
             var player = await _db.Players.FindAsync(id);
-            if (player == null) return NotFound();
+            if (player == null) return NotFound(); 
+
             return Ok(player);
         }
     }

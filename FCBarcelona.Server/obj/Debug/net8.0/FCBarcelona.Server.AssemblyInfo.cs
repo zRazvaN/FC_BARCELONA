@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCBarcelona.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08143d45c753190c868803cc3510e19676d3f42d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ae9421deeda54dac4a121bc27ffac02dc5b1a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCBarcelona.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCBarcelona.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

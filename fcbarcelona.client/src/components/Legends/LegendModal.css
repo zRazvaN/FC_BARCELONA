@@ -1,0 +1,124 @@
+/* LegendModal.css */
+
+.legend-modal .modal-content {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.legend-years {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.legend-description {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    .legend-description p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+        font-style: italic;
+    }
+
+/* Trophies Grid */
+.trophies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.trophy-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    .trophy-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .trophy-item.ucl-trophy:hover {
+        border-color: rgba(0, 82, 180, 0.5);
+        background: rgba(0, 82, 180, 0.1);
+    }
+
+    .trophy-item.liga-trophy:hover {
+        border-color: rgba(164, 34, 42, 0.5);
+        background: rgba(164, 34, 42, 0.1);
+    }
+
+    .trophy-item.copa-trophy:hover {
+        border-color: rgba(255, 215, 0, 0.5);
+        background: rgba(255, 215, 0, 0.05);
+    }
+
+    .trophy-item.other-trophy:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+.trophy-icon-large {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.trophy-count-large {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0052b4 0%, #a4222a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 5px;
+}
+
+.trophy-name {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Achievements Box */
+.achievements-box {
+    margin-top: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 82, 180, 0.1) 0%, rgba(164, 34, 42, 0.1) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    .achievements-box p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+        font-weight: 500;
+    }
+
+.trophy-count {
+    background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+

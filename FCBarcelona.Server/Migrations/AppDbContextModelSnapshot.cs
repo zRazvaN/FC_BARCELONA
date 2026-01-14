@@ -17,6 +17,78 @@ namespace FCBarcelona.Server.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");
 
+            modelBuilder.Entity("FCBarcelona.Server.Models.Legend", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Achievements")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Appearances")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Assists")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ChampionsLeague")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CopaDelRey")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("FormationX")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FormationY")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Goals")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsManager")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("LaLigaTitles")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Number")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OtherTrophies")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("YearsAtClub")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Legends");
+                });
+
             modelBuilder.Entity("FCBarcelona.Server.Models.Player", b =>
                 {
                     b.Property<int>("Id")

@@ -13,10 +13,11 @@ namespace FCBarcelona.Server.Controllers
 
         public VotesController(AppDbContext db) => _db = db;
 
-        // GET: api/votes/results
+        // Calculeaza clasamentul jucatorilor in functie de numarul de voturi
         [HttpGet("results")]
         public async Task<IActionResult> GetResults()
         {
+            // Grupam voturile dupa ID-ul jucatorului si le numaram
             var results = await _db.Votes
                 .GroupBy(v => v.PlayerId)
                 .Select(g => new
@@ -27,6 +28,7 @@ namespace FCBarcelona.Server.Controllers
                 .OrderByDescending(r => r.VoteCount)
                 .ToListAsync();
 
+            // Asociem fiecare rezultat cu datele complete ale jucatorului (nume, imagine)
             var playersWithVotes = new List<object>();
             foreach (var result in results)
             {
@@ -46,10 +48,11 @@ namespace FCBarcelona.Server.Controllers
             return Ok(new { Results = playersWithVotes, TotalVotes = totalVotes });
         }
 
-        // POST: api/votes
+        // Inregistreaza un vot nou in baza de date
         [HttpPost]
         public async Task<IActionResult> CastVote([FromBody] VoteRequest request)
         {
+            // Verificam daca acest vizitator (VoterIdentifier) a votat deja
             var existingVote = await _db.Votes
                 .FirstOrDefaultAsync(v => v.VoterIdentifier == request.VoterIdentifier);
 
@@ -64,6 +67,7 @@ namespace FCBarcelona.Server.Controllers
                 return NotFound(new { Message = "Player not found" });
             }
 
+            // Salveaza votul cu timestamp-ul actual
             var vote = new Vote
             {
                 PlayerId = request.PlayerId,
@@ -77,7 +81,7 @@ namespace FCBarcelona.Server.Controllers
             return Ok(new { Message = "Vote cast successfully!", Vote = vote });
         }
 
-        // GET: api/votes/check/{voterIdentifier}
+        // Verifica statusul unui vizitator pentru a sti ce sa afisam in Modal
         [HttpGet("check/{voterIdentifier}")]
         public async Task<IActionResult> CheckIfVoted(string voterIdentifier)
         {
@@ -88,6 +92,7 @@ namespace FCBarcelona.Server.Controllers
         }
     }
 
+    // Obiect ajutator pentru a receptiona datele de la Frontend
     public class VoteRequest
     {
         public int PlayerId { get; set; }

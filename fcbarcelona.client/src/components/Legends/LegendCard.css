@@ -1,0 +1,124 @@
+﻿.legend-card-pitch {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;   
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.legend-card-content {
+    position: relative; 
+    width: 110px;
+    height: 150px; 
+    border-radius: 8px;
+    background: radial-gradient(ellipse at center, #f5d06d 0%, #d4af37 60%, #a88215 100%);
+    border: 2px solid #fff2c2;
+    box-shadow: 0 0 0 1px #8a6e05, 
+    0 10px 20px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.legend-card-pitch:hover {
+    z-index: 20; 
+}
+    .legend-card-pitch:hover .legend-card-content {
+        transform: scale(1.15) translateY(-5px);
+        box-shadow: 0 0 0 2px #fff, 0 0 15px rgba(255, 215, 0, 0.6), 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+.legend-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top center; 
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.legend-card-number {
+    position: absolute;
+    top: 8px;
+    left: 8px; 
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16px;
+    color: #3e2723; 
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    z-index: 5;
+    background: none;
+    box-shadow: none;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+.legend-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to top, rgba(20, 10, 0, 0.95) 0%, rgba(62, 39, 35, 0.8) 80%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 6px;
+    opacity: 1; 
+    transform: none;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.legend-card-name {
+    color: #fff2c2; 
+    font-family: 'Cinzel', serif; 
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px black;
+}
+
+.legend-card-position {
+    color: #d4af37; 
+    font-size: 9px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.legend-card-trophies {
+    position: absolute;
+    bottom: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.legend-card-pitch:hover .legend-card-trophies {
+    opacity: 1;
+    bottom: -45px;
+}
+
+.trophy-icon {
+    background: linear-gradient(135deg, #2c3e50, #000);
+    color: #d4af37; 
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+    .trophy-icon.ucl {
+        border-color: #3498db; 
+    }

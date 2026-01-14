@@ -3,6 +3,7 @@ import './SortDropdown.css';
 function SortDropdown({ sortBy, onSortChange }) {
     return (
         <select
+            // Valoarea selectata este controlata de starea din componenta parinte (Players.jsx)
             value={sortBy}
             onChange={(e) => onSortChange(e.target.value)}
             className="sort-select"

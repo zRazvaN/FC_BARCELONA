@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './PlayerModal.css';
 
 function PlayerModal({ player, onClose, onNext, onPrev }) {
+    // Calculeaza varsta in timp real pentru a fi afisata in modal
     const calculateAge = (birthDate) => {
         const today = new Date();
         const birth = new Date(birthDate);
@@ -14,8 +15,10 @@ function PlayerModal({ player, onClose, onNext, onPrev }) {
     };
 
     useEffect(() => {
+        // Blocheaza scroll-ul paginii principale cand modalul este deschis
         document.body.style.overflow = 'hidden';
 
+        // Permite navigarea intre jucatori si inchiderea modalului de la tastatura
         const handleKeyDown = (e) => {
             if (e.key === 'ArrowRight') onNext();
             if (e.key === 'ArrowLeft') onPrev();
@@ -25,11 +28,13 @@ function PlayerModal({ player, onClose, onNext, onPrev }) {
         window.addEventListener('keydown', handleKeyDown);
 
         return () => {
+            // Re-activeaza scroll-ul si elimina event listener-ul la inchidere
             document.body.style.overflow = 'unset';
             window.removeEventListener('keydown', handleKeyDown);
         };
     }, [onNext, onPrev, onClose]);
 
+    // Inchide modalul daca se da click pe fundalul intunecat
     const handleBackdropClick = (e) => {
         if (e.target.classList.contains('modal-backdrop')) {
             onClose();
@@ -45,6 +50,7 @@ function PlayerModal({ player, onClose, onNext, onPrev }) {
             </button>
 
             <div className="modal-container">
+                {/* Buton inchidere modal (X) */}
                 <button className="modal-close" onClick={onClose} title="Close (Esc)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -53,6 +59,7 @@ function PlayerModal({ player, onClose, onNext, onPrev }) {
                 </button>
 
                 <div className="modal-content">
+                    {/* Partea stanga: Imaginea si datele de baza */}
                     <div className="modal-left">
                         <div className="modal-player-number">{player.number}</div>
                         <img src={player.imageUrl} alt={player.name} className="modal-player-image" />
@@ -62,6 +69,7 @@ function PlayerModal({ player, onClose, onNext, onPrev }) {
                         </div>
                     </div>
 
+                    {/* Partea dreapta: Statisici detaliate*/}
                     <div className="modal-right">
                         <div className="stats-section">
                             <h3 className="section-title">Player Statistics</h3>

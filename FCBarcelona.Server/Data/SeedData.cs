@@ -17,7 +17,7 @@ namespace FCBarcelona.Server.Data
                     ImageUrl = "/images/joan-garcia.jpg",
                     Nationality = "Spain",
                     Goals = 0,  
-                    DateOfBirth = new DateTime(2001, 05, 04) //?
+                    DateOfBirth = new DateTime(2001, 05, 04) 
                 },
 
                 new Player
@@ -47,7 +47,7 @@ namespace FCBarcelona.Server.Data
                 new Player
                 {
                     Name = "Jules Koundé",
-                    Position = "Defender",  //poziti multiple de trecut
+                    Position = "Defender",  
                     Number = 23,
                     ImageUrl = "/images/kounde.jpg",
                     Nationality = "France",
@@ -57,7 +57,7 @@ namespace FCBarcelona.Server.Data
                 new Player
                 {
                     Name = "Ronald Araújo",
-                    Position = "Defender", //poziti multiple de trecut
+                    Position = "Defender", 
                     Number = 4,
                     ImageUrl = "/images/araujo.jpg",
                     Nationality = "Uruguay",
@@ -89,7 +89,7 @@ namespace FCBarcelona.Server.Data
                 {
                     Name = "Pau Cubarsi",
                     Position = "Defender",
-                    Number = 5, //?
+                    Number = 5, 
                     ImageUrl = "/images/cubarsi.jpg",
                     Nationality = "Spain",
                     Goals = 1, 
@@ -100,7 +100,7 @@ namespace FCBarcelona.Server.Data
                 {
                     Name = "Eric Garcia",
                     Position = "Defender",
-                    Number = 24, //?
+                    Number = 24, 
                     ImageUrl = "/images/eric-garcia.jpg",
                     Nationality = "Spain",
                     Goals = 7, 
@@ -111,14 +111,14 @@ namespace FCBarcelona.Server.Data
                 {
                     Name = "Gerard Martín",
                     Position = "Defender",
-                    Number = 18, //?
+                    Number = 18, 
                     ImageUrl = "/images/martin.jpg",
                     Nationality = "Spain",
                     Goals = 1, 
                     DateOfBirth = new DateTime(2002, 02, 26) 
                 },
 
-                // Mijlocași
+                // Mijlocasi
                 new Player
                 {
                     Name = "Frenkie de Jong",
@@ -194,7 +194,7 @@ namespace FCBarcelona.Server.Data
                     DateOfBirth = new DateTime(2007, 05, 26)
                 },
 
-                // Atacanți
+                // Atacanti
                 new Player
                 {
                     Name = "Raphinha",

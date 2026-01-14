@@ -15,13 +15,13 @@ function CompareModal({ player1, player2, onClose }) {
 
     useEffect(() => {
         document.body.style.overflow = 'hidden';
-        
+
         const handleKeyDown = (e) => {
             if (e.key === 'Escape') onClose();
         };
-        
+
         window.addEventListener('keydown', handleKeyDown);
-        
+
         return () => {
             document.body.style.overflow = 'unset';
             window.removeEventListener('keydown', handleKeyDown);
@@ -62,7 +62,7 @@ function CompareModal({ player1, player2, onClose }) {
                 </div>
 
                 <div className="compare-content">
-                    {/* Player 1 */}
+                    {/* Sectiune Jucator 1 */}
                     <div className="compare-player">
                         <div className="compare-player-card">
                             <div className="compare-player-number">{player1.number}</div>
@@ -97,14 +97,13 @@ function CompareModal({ player1, player2, onClose }) {
                         </div>
                     </div>
 
-                    {/* VS Divider */}
                     <div className="compare-divider">
                         <div className="vs-badge">
                             <span>VS</span>
                         </div>
                     </div>
 
-                    {/* Player 2 */}
+                    {/* Sectiune Jucator 2 */}
                     <div className="compare-player">
                         <div className="compare-player-card">
                             <div className="compare-player-number">{player2.number}</div>
@@ -117,6 +116,7 @@ function CompareModal({ player1, player2, onClose }) {
                         </div>
 
                         <div className="compare-stats">
+                            {/* Verificam statisticile jucatorului 2 in raport cu jucatorul 1 */}
                             <div className={`compare-stat ${getComparisonValue(player2.goals, player1.goals)}`}>
                                 <div className="stat-label">Goals</div>
                                 <div className="stat-value">{player2.goals}</div>

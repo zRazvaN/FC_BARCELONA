@@ -14,15 +14,15 @@ function Players() {
     const [error, setError] = useState(null);
     const [selectedPlayer, setSelectedPlayer] = useState(null);
     const [animationComplete, setAnimationComplete] = useState(false);
-    
-    // Compare mode states
+
+    // State-uri pentru comparare 
     const [compareMode, setCompareMode] = useState(false);
     const [compareSelection, setCompareSelection] = useState([]);
-    
-    // Voting state
+
+    // State pentru fereastra de vot
     const [showVoting, setShowVoting] = useState(false);
-    
-    // Search, Sort, Filter states
+
+    // State-uri pentru motorul de cautare, sortare si panoul de filtre
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('default');
     const [showFilters, setShowFilters] = useState(false);
@@ -36,7 +36,8 @@ function Players() {
 
     useEffect(() => {
         fetchPlayers();
-        
+
+        // Efect vizual pentru ecranul de incarcare initial
         const timer = setTimeout(() => {
             setAnimationComplete(true);
         }, 1000);
@@ -44,6 +45,7 @@ function Players() {
         return () => clearTimeout(timer);
     }, []);
 
+    // Functie asincrona pentru preluarea listei de jucatori din baza de date
     async function fetchPlayers() {
         try {
             const response = await fetch('/api/players');
@@ -60,6 +62,7 @@ function Players() {
         }
     }
 
+    // Calculeaza varsta exacta a unui jucator pe baza datei de nastere
     const calculateAge = (birthDate) => {
         const today = new Date();
         const birth = new Date(birthDate);
@@ -71,17 +74,18 @@ function Players() {
         return age;
     };
 
+    // Aplica toate transformarile (filtrare, cautare, sortare) pe lista bruta de jucatori
     const getFilteredAndSortedPlayers = () => {
         let filtered = [...players];
 
-        // Apply search
+        // Filtrare dupa numele introdus in SearchBar
         if (searchTerm) {
-            filtered = filtered.filter(p => 
+            filtered = filtered.filter(p =>
                 p.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
         }
 
-        // Apply filters
+        // Aplicarea filtrelor specifice din FilterPanel
         if (filters.position !== 'all') {
             filtered = filtered.filter(p => p.position === filters.position);
         }
@@ -96,8 +100,8 @@ function Players() {
             return age >= filters.minAge && age <= filters.maxAge;
         });
 
-        // Apply sorting
-        switch(sortBy) {
+        // Logica de sortare in functie de criteriul selectat (nume, numar, varsta, goluri)
+        switch (sortBy) {
             case 'name-asc':
                 filtered.sort((a, b) => a.name.localeCompare(b.name));
                 break;
@@ -129,6 +133,7 @@ function Players() {
         return filtered;
     };
 
+    // Imparte lista rezultata in sub-grupuri pe baza pozitiei in teren
     const groupByPosition = (playersList) => {
         return {
             goalkeepers: playersList.filter(p => p.position === 'Goalkeeper'),
@@ -138,19 +143,20 @@ function Players() {
         };
     };
 
+    // Permite navigarea intre jucatori (Next/Prev) direct din fereastra modala
     const handlePlayerChange = (direction) => {
         if (!selectedPlayer) return;
-        
+
         const filteredPlayers = getFilteredAndSortedPlayers();
         const currentIndex = filteredPlayers.findIndex(p => p.id === selectedPlayer.id);
         let newIndex;
-        
+
         if (direction === 'next') {
             newIndex = (currentIndex + 1) % filteredPlayers.length;
         } else {
             newIndex = (currentIndex - 1 + filteredPlayers.length) % filteredPlayers.length;
         }
-        
+
         setSelectedPlayer(filteredPlayers[newIndex]);
     };
 
@@ -175,18 +181,19 @@ function Players() {
         setCompareSelection([]);
     };
 
+    // Gestioneaza click-ul pe card: fie deschide detalii, fie adauga la comparatie
     const handlePlayerClick = (player) => {
         if (compareMode) {
-            // Compare mode logic
+            // Logica pentru selectia a maxim 2 jucatori pentru comparatie
             if (compareSelection.find(p => p.id === player.id)) {
-                // Deselect player
+                // Deselectare daca jucatorul este deja in lista
                 setCompareSelection(compareSelection.filter(p => p.id !== player.id));
             } else if (compareSelection.length < 2) {
-                // Select player (max 2)
+                // Adaugare jucator nou
                 setCompareSelection([...compareSelection, player]);
             }
         } else {
-            // Normal mode - open modal
+            // Modul normal: deschidere Modal cu detalii
             setSelectedPlayer(player);
         }
     };
@@ -198,18 +205,19 @@ function Players() {
     const uniqueNationalities = [...new Set(players.map(p => p.nationality))].sort();
     const filteredPlayers = getFilteredAndSortedPlayers();
     const grouped = groupByPosition(filteredPlayers);
-    const hasActiveFilters = searchTerm || sortBy !== 'default' || 
-        filters.position !== 'all' || filters.minGoals > 0 || 
+    const hasActiveFilters = searchTerm || sortBy !== 'default' ||
+        filters.position !== 'all' || filters.minGoals > 0 ||
         filters.nationality !== 'all' || filters.minAge > 0 || filters.maxAge < 100;
 
+    // Afisare ecran de incarcare cu animatie
     if (loading) {
         return (
             <div className="loading-screen">
                 <div className="ball-animation">
                     <svg viewBox="0 0 100 100" className="animated-ball">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2"/>
-                        <path d="M50,5 L50,25 M50,75 L50,95 M5,50 L25,50 M75,50 L95,50" stroke="currentColor" strokeWidth="2"/>
-                        <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" />
+                        <path d="M50,5 L50,25 M50,75 L50,95 M5,50 L25,50 M75,50 L95,50" stroke="currentColor" strokeWidth="2" />
+                        <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2" />
                     </svg>
                 </div>
                 <p className="loading-text">Loading Squad...</p>
@@ -221,13 +229,14 @@ function Players() {
 
     return (
         <>
+            {/* Overlay-ul de animatie care dispare dupa incarcare */}
             <div className={`players-animation-overlay ${animationComplete ? 'fade-out' : ''}`}>
                 <div className="players-animation-content">
                     <div className="ball-animation">
                         <svg viewBox="0 0 100 100" className="animated-ball">
-                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M50,5 L50,25 M50,75 L50,95 M5,50 L25,50 M75,50 L95,50" stroke="currentColor" strokeWidth="2"/>
-                            <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" />
+                            <path d="M50,5 L50,25 M50,75 L50,95 M5,50 L25,50 M75,50 L95,50" stroke="currentColor" strokeWidth="2" />
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2" />
                         </svg>
                     </div>
                     <p className="loading-text">Loading Squad...</p>
@@ -246,10 +255,10 @@ function Players() {
                     </div>
                 </header>
 
-                {/* Toolbar */}
+                {/* Zona de Toolbar: Cautare, Sortare, Filtre, Comparatie si Vot */}
                 <div className="toolbar">
                     <div className="toolbar-left">
-                        <SearchBar 
+                        <SearchBar
                             searchTerm={searchTerm}
                             onSearchChange={setSearchTerm}
                             onClear={() => setSearchTerm('')}
@@ -257,12 +266,12 @@ function Players() {
                     </div>
 
                     <div className="toolbar-right">
-                        <SortDropdown 
+                        <SortDropdown
                             sortBy={sortBy}
                             onSortChange={setSortBy}
                         />
-                        
-                        <FilterPanel 
+
+                        <FilterPanel
                             showFilters={showFilters}
                             onToggleFilters={() => setShowFilters(!showFilters)}
                             hasActiveFilters={hasActiveFilters}
@@ -272,7 +281,7 @@ function Players() {
                             uniqueNationalities={uniqueNationalities}
                         />
 
-                        <button 
+                        <button
                             onClick={handleCompareToggle}
                             className={`compare-toggle-button ${compareMode ? 'active' : ''}`}
                         >
@@ -286,7 +295,7 @@ function Players() {
                             )}
                         </button>
 
-                        <button 
+                        <button
                             onClick={() => setShowVoting(true)}
                             className="voting-toggle-button"
                         >
@@ -298,7 +307,7 @@ function Players() {
                     </div>
                 </div>
 
-                {/* Compare Mode Banner */}
+                {/* Banner informativ afisat doar in modul de comparare */}
                 {compareMode && (
                     <div className="compare-banner">
                         <div className="compare-banner-content">
@@ -314,9 +323,9 @@ function Players() {
                             </span>
                         </div>
                         {compareSelection.length === 2 && (
-                            <button 
+                            <button
                                 onClick={() => {
-                                }} 
+                                }}
                                 className="view-comparison-btn"
                             >
                                 View Comparison
@@ -325,7 +334,7 @@ function Players() {
                     </div>
                 )}
 
-                {/* Results Info */}
+                {/* Indicator pentru numarul de rezultate gasite dupa filtrare */}
                 <div className="results-info">
                     <span className="results-count">
                         Showing {filteredPlayers.length} of {players.length} players
@@ -337,7 +346,7 @@ function Players() {
                     )}
                 </div>
 
-                {/* Players Grid */}
+                {/* Randarea sectiunilor de jucatori pe categorii sau mesajul de "fara rezultate" */}
                 {filteredPlayers.length === 0 ? (
                     <div className="no-results">
                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -355,9 +364,9 @@ function Players() {
                                 <h2 className="position-title">Goalkeepers</h2>
                                 <div className="players-grid">
                                     {grouped.goalkeepers.map(player => (
-                                        <PlayerCard 
-                                            key={player.id} 
-                                            player={player} 
+                                        <PlayerCard
+                                            key={player.id}
+                                            player={player}
                                             onClick={() => handlePlayerClick(player)}
                                             isSelected={isPlayerSelected(player.id)}
                                             compareMode={compareMode}
@@ -372,8 +381,8 @@ function Players() {
                                 <h2 className="position-title">Defenders</h2>
                                 <div className="players-grid">
                                     {grouped.defenders.map(player => (
-                                        <PlayerCard 
-                                            key={player.id} 
+                                        <PlayerCard
+                                            key={player.id}
                                             player={player}
                                             onClick={() => handlePlayerClick(player)}
                                             isSelected={isPlayerSelected(player.id)}
@@ -389,8 +398,8 @@ function Players() {
                                 <h2 className="position-title">Midfielders</h2>
                                 <div className="players-grid">
                                     {grouped.midfielders.map(player => (
-                                        <PlayerCard 
-                                            key={player.id} 
+                                        <PlayerCard
+                                            key={player.id}
                                             player={player}
                                             onClick={() => handlePlayerClick(player)}
                                             isSelected={isPlayerSelected(player.id)}
@@ -406,8 +415,8 @@ function Players() {
                                 <h2 className="position-title">Forwards</h2>
                                 <div className="players-grid">
                                     {grouped.forwards.map(player => (
-                                        <PlayerCard 
-                                            key={player.id} 
+                                        <PlayerCard
+                                            key={player.id}
                                             player={player}
                                             onClick={() => handlePlayerClick(player)}
                                             isSelected={isPlayerSelected(player.id)}
@@ -420,9 +429,10 @@ function Players() {
                     </>
                 )}
 
+                {/* Modalele pentru detalii, comparatie si votare */}
                 {selectedPlayer && !compareMode && (
-                    <PlayerModal 
-                        player={selectedPlayer} 
+                    <PlayerModal
+                        player={selectedPlayer}
                         onClose={() => setSelectedPlayer(null)}
                         onNext={() => handlePlayerChange('next')}
                         onPrev={() => handlePlayerChange('prev')}
@@ -430,7 +440,7 @@ function Players() {
                 )}
 
                 {compareSelection.length === 2 && (
-                    <CompareModal 
+                    <CompareModal
                         player1={compareSelection[0]}
                         player2={compareSelection[1]}
                         onClose={() => {
@@ -441,7 +451,7 @@ function Players() {
                 )}
 
                 {showVoting && (
-                    <VotingModal 
+                    <VotingModal
                         players={players}
                         onClose={() => setShowVoting(false)}
                     />

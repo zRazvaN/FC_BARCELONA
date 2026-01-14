@@ -8,6 +8,8 @@ function VotingModal({ players, onClose }) {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Genereaza sau recupereaza un ID unic pentru vizitator din browser (LocalStorage)
+    // Acest ID previne votul multiplu fara a necesita cont de utilizator
     const getVoterIdentifier = () => {
         let identifier = localStorage.getItem('voter_id');
         if (!identifier) {
@@ -18,30 +20,34 @@ function VotingModal({ players, onClose }) {
     };
 
     useEffect(() => {
+        // Blocam scroll-ul paginii din spate cand modalul este deschis
         document.body.style.overflow = 'hidden';
         checkVotingStatus();
 
+        // Inchidere modal la apasarea tastei Escape
         const handleKeyDown = (e) => {
             if (e.key === 'Escape') onClose();
         };
-        
+
         window.addEventListener('keydown', handleKeyDown);
-        
+
         return () => {
+            // Reinstauram scroll-ul si curatam event listener-ul la inchidere
             document.body.style.overflow = 'unset';
             window.removeEventListener('keydown', handleKeyDown);
         };
     }, [onClose]);
 
+    // Verifica la server daca acest vizitator a votat deja
     const checkVotingStatus = async () => {
         try {
             const identifier = getVoterIdentifier();
             const response = await fetch(`/api/votes/check/${identifier}`);
             const data = await response.json();
-            
+
             if (data.hasVoted) {
                 setHasVoted(true);
-                await fetchResults();
+                await fetchResults(); // Daca a votat, aratam direct rezultatele
             }
         } catch (err) {
             console.error('Error checking vote status:', err);
@@ -50,6 +56,7 @@ function VotingModal({ players, onClose }) {
         }
     };
 
+    // Aduce clasamentul actual de la server
     const fetchResults = async () => {
         try {
             const response = await fetch('/api/votes/results');
@@ -60,14 +67,13 @@ function VotingModal({ players, onClose }) {
         }
     };
 
+    // Trimite votul catre API
     const handleVote = async (playerId) => {
         try {
             const identifier = getVoterIdentifier();
             const response = await fetch('/api/votes', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     playerId: playerId,
                     voterIdentifier: identifier
@@ -76,7 +82,7 @@ function VotingModal({ players, onClose }) {
 
             if (response.ok) {
                 setHasVoted(true);
-                await fetchResults();
+                await fetchResults(); // Reincarcam rezultatele pentru a include noul vot
             } else {
                 const errorData = await response.json();
                 setError(errorData.message || 'Failed to cast vote');
@@ -87,12 +93,14 @@ function VotingModal({ players, onClose }) {
         }
     };
 
+    // Inchide modalul daca se da click pe fundalul intunecat (in afara ferestrei)
     const handleBackdropClick = (e) => {
         if (e.target.classList.contains('voting-backdrop')) {
             onClose();
         }
     };
 
+    // Calculeaza procentajul pentru bara de progres din rezultate
     const getPercentage = (voteCount, totalVotes) => {
         if (totalVotes === 0) return 0;
         return ((voteCount / totalVotes) * 100).toFixed(1);
@@ -136,12 +144,11 @@ function VotingModal({ players, onClose }) {
                         {error}
                     </div>
                 )}
-
                 {!hasVoted ? (
                     <div className="voting-grid">
                         {players.map(player => (
-                            <div 
-                                key={player.id} 
+                            <div
+                                key={player.id}
                                 className={`vote-card ${selectedPlayer === player.id ? 'selected' : ''}`}
                                 onClick={() => setSelectedPlayer(player.id)}
                             >
@@ -150,9 +157,9 @@ function VotingModal({ players, onClose }) {
                                     <div className="vote-player-number">{player.number}</div>
                                     <h3 className="vote-player-name">{player.name}</h3>
                                     <p className="vote-player-position">{player.position}</p>
-                                    <button 
+                                    <button
                                         onClick={(e) => {
-                                            e.stopPropagation();
+                                            e.stopPropagation(); 
                                             handleVote(player.id);
                                         }}
                                         className="vote-button"
@@ -179,34 +186,33 @@ function VotingModal({ players, onClose }) {
                                         {index === 2 && '3'}
                                         {index > 2 && `#${index + 1}`}
                                     </div>
-                                    
-                                    <img 
-                                        src={result.player.imageUrl} 
-                                        alt={result.player.name} 
+
+                                    <img
+                                        src={result.player.imageUrl}
+                                        alt={result.player.name}
                                         className="result-player-image"
                                     />
-                                    
+
                                     <div className="result-player-info">
                                         <h4>{result.player.name}</h4>
                                         <p>{result.player.position}</p>
                                     </div>
-                                    
+
                                     <div className="result-votes">
                                         <div className="vote-count">{result.voteCount} votes</div>
                                         <div className="vote-percentage">
                                             {getPercentage(result.voteCount, votingResults.totalVotes)}%
                                         </div>
                                     </div>
-
                                     <div className="result-progress">
-                                        <div 
+                                        <div
                                             className="progress-bar"
-                                            style={{ 
+                                            style={{
                                                 width: `${getPercentage(result.voteCount, votingResults.totalVotes)}%`,
                                                 background: index === 0 ? 'linear-gradient(90deg, #FFD700, #FFA500)' :
-                                                           index === 1 ? 'linear-gradient(90deg, #C0C0C0, #A8A8A8)' :
-                                                           index === 2 ? 'linear-gradient(90deg, #CD7F32, #B87333)' :
-                                                           'linear-gradient(90deg, #0066ff, #00ccff)'
+                                                    index === 1 ? 'linear-gradient(90deg, #C0C0C0, #A8A8A8)' :
+                                                        index === 2 ? 'linear-gradient(90deg, #CD7F32, #B87333)' :
+                                                            'linear-gradient(90deg, #0066ff, #00ccff)'
                                             }}
                                         ></div>
                                     </div>
